@@ -73,7 +73,6 @@ class Student {
         }
     }
     static public function render_arrivals() {
-        sleep(10);
         $arrivals = self::get_logs("arrivals.json");
         echo var_dump(is_null($arrivals));
         if (isset($arrivals)) {
